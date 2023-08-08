@@ -1,0 +1,726 @@
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #1b2223;
+}
+
+.main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    width: 50%;
+}
+
+.main p{
+    color: rgb(84, 82, 82);
+}
+
+.header{
+    display: flex;
+    position: sticky;
+    left: 7.9px;
+    right: 8px;
+    top: 0;
+    justify-content: space-between;
+    background-color: #f4fefd;
+    margin: 0;
+    padding-right: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.logo{
+    margin: 0;
+    font-size: 25px;
+    padding: 15px 17px;
+    font-family: arial;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #9c7474;
+    width: 110px;
+    margin-top: -5px;
+}
+
+.logo span{
+    margin-left: -8px;
+    font-style: normal;
+    color: #f76060;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: end;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.list li a{
+    display: flex;
+    padding: 17px 17px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.list li a:hover{
+    background-color: #0ef6cc;
+    transition: .3 all ease;
+}
+
+
+.list li a:focus{
+    background-color: #3a4f50;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.list li a:active{
+    background-color: #3a4f50;
+}
+
+.menuicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuicon, .fa-bars{
+    font-size:30px;
+    color:rgb(56, 56, 56);
+    display: none;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.dropdown ul li{
+    list-style: none;
+    display: flex;
+}
+
+.dropdown a{
+    width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 100px;
+    margin-top: 0;
+    display: none;
+}
+
+.dropdown a:hover{
+    background-color: #3a4f50;
+    border-radius: 50px;
+}
+
+.dropdown a:focus{
+    opacity: 0.5;
+}
+
+.body{
+    padding-top: 250px;
+    padding-bottom: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -35px;
+    background-image: url(images/pexels-pool.jpg);
+    background-blend-mode: multiply;
+    background-color: #9c7474;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.body h1{
+    font-size: 35px;
+    margin-bottom: 0;
+    color: #f76060;
+    z-index: 1px;
+}
+
+.body p{
+    max-width: 850px;
+    color: #f5a3a3;
+}
+
+
+.body-content{
+    min-width: 300px;
+}
+
+.body-home{
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex: 1;
+}
+
+#input{
+    flex: 1;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    box-shadow: inset 0 0 2px #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: #bbbbbb;
+    outline: none;
+}
+
+#input:focus{
+   border-color: #5d9d0b;
+   box-shadow: inset 0 0 5px #fff;
+}
+
+.btn input{
+    height: 50px;
+    width: 90px;
+    margin-left: -1px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all.3s ease;
+}
+
+.btn input:hover{
+    background-color: #5d9d0b;
+}
+
+.content{
+    margin-top: -40px;
+}
+
+.service #service{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#service span{
+    padding: 15px;
+    background-color: #0ef6cc;
+    border-radius: 30% 30% 0px 30%;
+}
+
+.service {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #b7b7b7;
+    padding-bottom: 100px;
+}
+
+.service-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.product{
+    min-width: 300px;
+	width: 500px;
+    flex: 1 0 50px;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+.product img{
+    width: 80%;
+}
+
+.product:hover{
+    box-shadow:0 0 4px #ddd;
+}
+
+
+.product input{
+    height: 40px;
+    width: 150px;
+    background-color: #5d9d0b;
+    font-weight: 600;
+    border: none ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.product input:hover{
+    scale: 1.04;
+}
+
+.product input:active{
+    scale: 1;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form-content{
+    width: 200px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.mail, .password, .message{
+    display: flex;
+    z-index: 100px;
+
+}
+
+.message{
+    display: flex;
+    align-items: center;
+}
+
+#maillogo, #lock, #chat{
+    height: 20px;
+    margin: 23px -30px; 
+    opacity: .5;
+}
+
+
+.form-content #forminput{
+    height: 40px;
+    width: 250px;
+    margin-top: 10px;
+    padding-left: 20px;
+    outline: none;
+}
+
+#formmessage{
+    height: 60px;
+    width: 250px;
+    margin-top: 10px;
+    padding-left: 20px;
+    outline: none;
+}
+
+#buttom{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid grey;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+#buttom:hover{
+    background-color: green;
+    color: #fff;
+    border: none;
+}
+
+#buttom:active{
+    opacity: 0.8;
+}
+
+.online {
+    display: flex;
+    justify-content: center;
+    opacity: .8;
+}
+
+.container-main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #9c7474;
+}
+
+.photo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 50px 20px 0 20px;
+}
+
+
+.pictures{
+    padding: 10px;
+    text-align: center;
+    flex: 1 0 200px;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+
+}
+
+.pictures:hover{
+    border:  1px solid #fff;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#shoping-btn img, #currency-btn img{
+    height: 30px;
+}
+
+#shoping-btn, #currency-btn{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0ef6cc;
+    transition: 0.25s ease;
+}
+
+
+ #currency-btn img:hover, #shoping-btn:hover{
+    scale: 1.04;
+}
+
+
+#currency-btn:active, #shoping-btn:active{
+    scale: 1;
+}
+
+.pictures img{
+    height: 300px;
+}
+
+.pictures #img, #first, #last{
+    width: 400px;
+    border-radius: 70px;
+    padding: 5px;
+    border: 4px solid #285AEB;
+    background-color: #fff;
+}
+
+#second, #fifth{
+    width: 400px;
+    border-radius: 70px;
+    padding: 5px;
+    border: 4px solid #285AEB;
+    background-color: #fff;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px; 
+    padding-right: 20px;
+    background-color: #3a4f50;
+}
+
+#container  li a{
+   color: rgb(164, 163, 163); 
+}
+
+#container p {
+    color: rgb(164, 163, 163);
+}
+
+#dandev {
+    width: 300px;
+}
+
+#dandev h1{
+   color:  #9c7474;
+}
+
+#dandev span{
+    margin-left: -10px;
+    color: #f76060;
+}
+
+#dandev-image{
+    display: flex;
+    gap: 20px;
+}
+
+#facebook-logo, #twitter-logo, #intagram-logo, #whatsapp-logo{
+    height: 35px;
+    padding: 6px;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition:.4s ease;
+}
+
+#facebook-logo{
+    background-color: rgb(52, 52, 245);
+    color: #c5c5c5;
+}
+
+#twitter-logo{
+    background-color: rgb(6, 193, 255);
+}
+
+#intagram-logo{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transition: .4s ease;
+
+}
+
+#whatsapp-logo{
+    background-color: green;
+}
+
+
+#quick-link img{
+    height: 20px;
+    padding-right: 20px;
+}
+
+#quick-link ul li, #list li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+#quick-link ul li a{
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: -3px;
+    margin-top: -25px;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+#quick-link a:hover{
+    color: #285AEB;
+    transform: translateX(5px);
+}
+
+
+#list img{
+    height: 20px;
+}
+
+#list li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+#subscribe-box{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(231, 230, 230);
+    border: none;
+    border-radius: 5px;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+#Subscribe-btn{
+    height: 50px;
+    width: 140px;
+    background: none;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 3px solid;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+#Subscribe-btn:hover{
+    border-color: rgb(228, 19, 19);
+}
+
+.scroll #myBtn{
+    position: fixed;
+    display: none;
+    color: #FFF;
+    z-index: 99;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background: #285AEB;
+    border: none;
+    border-radius: 5px;
+}
+
+.scroll #myBtn:hover{
+    background-color: #3261ef;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -10px;
+    font-size: 20px;
+    background-color: #3a4f50;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 5px;
+    color: #9c7474;
+    transition: .4s ease-out;
+}
+
+footer a span{
+    margin-left: -7px;
+    color: #f76060;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    text-decoration-color: #535050;
+    transition: .4s ease-out;
+}
+
+hr{
+    height: 20px;
+    margin: 10px;
+    border: 1px solid rgb(84, 82, 82);
+}
+
+.tootip{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3a4f50;
+    display: none;
+}
+
+.gallery img{
+    position: relative;
+    height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.gallery img:active{
+    scale: 1.03;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px){
+    .pictures:hover{
+        border: none;
+    }
+}
+
+@media all and (max-width:767px) {
+    .main{
+        width: 100%;
+        display: inline;
+        align-items: center;
+    }
+    .list li a{
+        display: none;
+    }
+
+    .menuicon, .fa-bars{
+        display: block;
+        margin-top:7px;
+    }
+
+
+    .photo{
+        display: flex;
+    }
+    .pictures {
+        width: 100%;
+        max-width: 400px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+     .pictures p{
+        max-width: 300px;
+        text-align: center;
+        margin-left: 10px;
+     }
+
+     .pictures #first, #second, #fifth, #last,#img{
+        margin-left: 15px;
+     }
+
+     .pictures #shoping-btn, #currency-btn{
+        width: 140px;
+     }
+
+    .pictures #first, #second, #fifth, #last{
+        width: 90%;
+    }
+
+    .pictures #img{
+        width: 90%;
+    }
+
+    .pictures:hover{
+        border: none;
+    }
+
+    #currency-btn, #shopping-btn{
+    }
+
+    #Subscribe-btn{
+        margin-bottom: 30px;
+    }
+
+    #container{
+        border-bottom: 1px solid #676464;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .tootip{
+        display: flex;
+    }
+}
+
